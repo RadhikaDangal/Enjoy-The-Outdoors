@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>EcoScape National Park</b></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="national-parks.html">National Parks</a>
+              <a class="nav-link" href="mountains.html">Mountains</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <h1 class="text-center mb-3">Mountains Heights</h1>
+      <div class="mb-4">
+        <label for="mountains-ddl" form="form-label"> Search Mountain</label>
+        <select class="form-select" id="mountains-ddl" onchange="loadMountainTable(this.value)"></select>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <table class="table table-striped text-center">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Mountain Name</th>
+                <th>Elevation</th>
+                <th>Effort</th>
+                <th>Description</th>
+                <th>Sunrise/Sunset</th>
+              </tr>
+            </thead>
+            <tbody id="mountain-tbl-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/mountainData.js"></script>
+    <script src="scripts/mountain.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-g2PN7Fw8BqNl+j/0V511zY1XYCxXU6j53GJzFxBCvz//+65C/pvoh//fjDz7yW+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-rbsA3n9r4UZ+s8/7U0B1R5z2rJ9nW6f3Z/pjGf8eAq4xT9l+KtQD1XyMgWp6CwD/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
