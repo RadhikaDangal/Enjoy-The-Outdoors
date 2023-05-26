@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>National Parks</title>
+    <title>EcoScape National Park</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,38 +15,44 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
     />
+    <link rel="stylesheet" href="style.css/style.css" />
     <style>
       .index-main {
-        background: url(Images/Background.jpg.jpg) no-repeat center / cover fixed;
-        margin-bottom: 1em;
-        height: 100%;
+        background: url(Images/Background.jpg.jpg) no-repeat center center fixed;
+        background-size: cover;
       }
       .main-text {
-        margin-top: 5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        background-color: black;
+        color: white;
+        padding: 1em 2em;
       }
     </style>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><b>EcoScape National Park</b></a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="national-parks.html">National Parks</a>
-              <a class="nav-link" href="mountains.html">Mountains</a>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="national-parks.html">National Parks</a>
+                <a class="nav-link" href="mountains.html">Mountains</a>
+              </div>
             </div>
           </div>
         </div>
@@ -55,34 +61,53 @@
     <main class="index-main">
       <div class="container">
         <div class="row">
-          <div class="col-sm">
-            <section class="main-text">
-              <p>
-                Welcome to Outdoor Adventures! We are a dedicated platform that aims to help users find exciting outdoor
-                activities to fully enjoy the wonders of nature. Whether you're an avid hiker, nature enthusiast, or
-                simply looking for a new adventure, we specialize in providing information on breathtaking national
-                parks and majestic mountains to explore.
-              </p>
+          <div class="col"></div>
+          <div class="col-6"></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-5"></div>
+          <div class="col">
+            <div class="col-sm">
+              <section class="main-text">
+                <h4 class="text-center mb-3"><b>About Us</b></h4>
 
-              <p>
-                Our mission is to connect you with the best outdoor destinations, allowing you to immerse yourself in
-                the beauty of nature and embark on unforgettable experiences. We understand the importance of finding
-                the perfect national park that aligns with your preferences, offering diverse landscapes, wildlife
-                encounters, and awe-inspiring natural wonders.
-              </p>
+                <p>
+                  Welcome to Outdoor Adventures! We are a dedicated platform that aims to help users find exciting
+                  outdoor activities to fully enjoy the wonders of nature. Whether you're an avid hiker, nature
+                  enthusiast, or simply looking for a new adventure, we specialize in providing information on
+                  breathtaking national parks and majestic mountains to explore.
+                </p>
 
-              <p>
-                On our website, you'll discover a comprehensive search functionality that enables you to explore
-                national parks based on location and park type. From the tranquility of serene forests to the
-                breathtaking vistas of rugged mountains, we provide detailed information on each national park's
-                features, facilities, and even direct links to their official websites for further exploration.
-              </p>
-            </section>
+                <p>
+                  Our mission is to connect you with the best outdoor destinations, allowing you to immerse yourself in
+                  the beauty of nature and embark on unforgettable experiences. We understand the importance of finding
+                  the perfect national park that aligns with your preferences, offering diverse landscapes, wildlife
+                  encounters, and awe-inspiring natural wonders.
+                </p>
+
+                <p>
+                  On our website, you'll discover a comprehensive search functionality that enables you to explore
+                  national parks based on location and park type. From the tranquility of serene forests to the
+                  breathtaking vistas of rugged mountains, we provide detailed information on each national park's
+                  features, facilities, and even direct links to their official websites for further exploration.
+                </p>
+              </section>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="row">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Our Services</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

@@ -14,25 +14,27 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><b>EcoScape National Park</b></a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="national-parks.html">National Parks</a>
-              <a class="nav-link" href="mountains.html">Mountains</a>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="national-parks.html">National Parks</a>
+                <a class="nav-link" href="mountains.html">Mountains</a>
+              </div>
             </div>
           </div>
         </div>
@@ -40,9 +42,9 @@
     </header>
 
     <main class="container mt-5">
-      <h1 class="text-center mb-3">Mountains Heights</h1>
+      <h1 class="text-center mb-3">Mountain Majesty</h1>
       <div class="mb-4">
-        <label for="mountains-ddl" form="form-label"> Search Mountain</label>
+        <label for="mountains-ddl" form="form-label"> Explore The Peak</label>
         <select class="form-select" id="mountains-ddl" onchange="loadMountainTable(this.value)"></select>
       </div>
       <div class="row">

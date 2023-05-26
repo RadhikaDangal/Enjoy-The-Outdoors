@@ -21,7 +21,7 @@ function buildMountainRow(tbody, mountain) {
   cell5.innerText = mountain.desc;
 
   let cell6 = row.insertCell(5);
-  getSunsetForMountain(mountain.coords.lat, mountain.coords.lng).then(function(data) {
+  getSunsetForMountain(mountain.coords.lat, mountain.coords.lng).then(function (data) {
     let sunrise = data.results.sunrise;
     let sunset = data.results.sunset;
     cell6.innerText = `${sunrise} - ${sunset}`;
@@ -31,7 +31,7 @@ function buildMountainRow(tbody, mountain) {
 function mountainsList() {
   let count = 0;
 
-  let option = new Option("Pick Mountain...", "");
+  let option = new Option("Select Mountain", "");
   mountainsDDL.appendChild(option);
 
   for (const mountain of mountainsArray) {
@@ -46,9 +46,7 @@ mountainsList();
 
 function loadMountainTable(name) {
   clearTable();
-  const Mountain = mountainsArray.find(
-    (mountain, index) => name == index
-  );
+  const Mountain = mountainsArray.find((mountain, index) => name == index);
   //   for (const mountain of filteredMountains) {
   buildMountainRow(mountainTblBody, Mountain);
   //   }
@@ -59,9 +57,8 @@ function clearTable() {
 }
 
 // function that can "fetch" the sunrise/sunset times
-async function getSunsetForMountain(lat, lng){
-  let response = await fetch(
-  `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
+async function getSunsetForMountain(lat, lng) {
+  let response = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
   let data = await response.json();
   return data;
- }
+}

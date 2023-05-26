@@ -14,39 +14,34 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><b>EcoScape National Park</b></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="national-parks.html">National Parks</a>
-              <a class="nav-link" href="mountains.html">Mountains</a>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="national-parks.html">National Parks</a>
+                  <a class="nav-link" href="mountains.html">Mountains</a>
+                </div>
           </div>
         </div>
-      </nav>
+
     </header>
     <main>
       <div class="container text-center my-5">
-        <h1>National Parks</h1>
+        <h1>Majestic Peaks National Parks</h1>
         <section onchange="checkBtn()">
           <input type="radio" name="buttonChoice" id="locationButton" value="1" />
-          <label for="locationButton">Search By Location</label>
+          <label for="locationButton"><b>Search By Location</b></label>
           <input type="radio" name="buttonChoice" id="typeButton" value="2" />
-          <label for="typeButton">Search By Type</label>
+          <label for="typeButton"><b>Search By Type</b></label>
         </section>
+
+        <br>
 
         <select id="locationDropDownList" style="display: none" onchange="loadParksInTableByState()"></select>
         <select id="parkTypesDropDownList" style="display: none" onchange="loadParksInTableByTypes()"></select>
