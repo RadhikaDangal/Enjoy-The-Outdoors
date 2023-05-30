@@ -9,24 +9,44 @@ function buildTableRow(tbody, park) {
 
   let cell1 = row.insertCell(0);
   cell1.innerText = park.LocationName;
+  if (!park.LocationName) {
+    cell1.innerText = "None"
+  }
 
   let cell2 = row.insertCell(1);
   cell2.innerText = park.Address;
+  if (!park.Address) {
+    cell2.innerText = "None"
+  }
 
   let cell3 = row.insertCell(2);
   cell3.innerText = park.City;
+  if (!park.City) {
+    cell3.innerText = "None"
+  }
 
   let cell4 = row.insertCell(3);
   cell4.innerText = park.State;
+  if (!park.State) {
+    cell4.innerText = "None"
+  }
 
   let cell5 = row.insertCell(4);
   cell5.innerText = park.ZipCode;
+  if (!park.ZipCode) {
+    cell5.innerText = "None"
+  }
 
   let cell6 = row.insertCell(5);
   cell6.innerText = park.Phone;
-
+  if (!park.Phone) {
+    cell6.innerText = "None"
+  }
+  
+  if (park.Visit){
   let cell7 = row.insertCell(6);
   cell7.innerHTML = `<a href="${park.Visit}" target="_blank">Visit Page</a>`;
+}
 }
 
 function loadParksInTableByState() {
