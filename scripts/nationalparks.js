@@ -42,9 +42,9 @@ function buildTableRow(tbody, park) {
   if (!park.Phone) {
     cell6.innerText = "None"
   }
-  
-  if (park.Visit){
   let cell7 = row.insertCell(6);
+  if (park.Visit){
+  
   cell7.innerHTML = `<a href="${park.Visit}" target="_blank">Visit Page</a>`;
 }
 }
